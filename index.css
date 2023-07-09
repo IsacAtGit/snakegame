@@ -10,11 +10,11 @@
         width: 400px;
     }
     h2{
-       margin-top: 30px;
+      
         color: darkgreen;
     }
     #msg{
-        /* text-align: center; */
+    
         margin-bottom: 1em;
     }
     #gameboard{
@@ -36,9 +36,7 @@
         padding-top: 10px;
         margin-top: 20px;
     }
-    canvas{
-        margin-top: 70px;
-    }
+   
     
     .pushable {
         margin: 10px;
@@ -132,7 +130,7 @@
         }
        
         h2{
-           /* margin-top: 30px; */
+          
             color: darkgreen;
             text-align: center;
             width: 300px;
@@ -211,7 +209,7 @@
             width: 400px;
         }
         h2{
-           margin-top: 30px;
+           
             color: darkgreen;
         }
         #msg{
@@ -238,7 +236,7 @@
             margin-top: 20px;
         }
         canvas{
-            margin-top: 70px;
+            margin-top: 10px;
         }
         
         .pushable {
