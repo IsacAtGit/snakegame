@@ -6,6 +6,9 @@
       text-align: center;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .container{
+        width: 400px;
+    }
     h2{
        margin-top: 30px;
         color: darkgreen;
@@ -69,13 +72,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   h2{
-     margin-top: 30px;
+     /* margin-top: 30px; */
       color: darkgreen;
   }
-  #msg{
-      /* text-align: center; */
-      margin-bottom: 1em;
-  }
+
   #gameboard{
       border:3px solid
   }
@@ -95,10 +95,7 @@
       padding-top: 10px;
       margin-top: 20px;
   }
-  canvas{
-      margin-top: 70px;
-     
-  }
+ 
   
   .pushable {
       margin: 10px;
@@ -123,3 +120,144 @@
     .pushable:active .front {
       transform: translateY(-2px);
     }
+
+
+    @media only screen and (max-width: 300px) {
+        * {
+          background-color: lightblue;
+          padding: 0px;
+          margin: 0px;
+          text-align: center;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+       
+        h2{
+           /* margin-top: 30px; */
+            color: darkgreen;
+            text-align: center;
+            width: 400px;
+        }
+       canvas{
+        margin: 0px;
+        padding: 0px;
+       }
+        #gameboard{
+            border:3px solid
+        }
+        #score{
+        margin-top: 1em;
+        width: 400px;
+        margin-bottom: 1em;
+        text-align: center;
+        border: 2px solid red;
+        }
+        .btns{
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap:unset;
+            justify-content:center;
+            width: 400px;
+            /* border: 2px solid red; */
+        }
+        /* #start{
+            margin: auto;
+            display: flex;
+            justify-content:end;
+            border: 2px solid red;
+          
+        } */
+        #startdiv{
+            margin: auto;
+            display: flex;
+            justify-content:center;
+            /* border: 2px solid red; */
+            width: 400px;
+        }
+     
+        
+        .pushable {
+            margin: 10px;
+           
+            background: hsl(340deg 100% 32%);
+            border-radius: 12px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline-offset: 4px;
+          }
+          .front {
+            display: block;
+            padding: 15px 42px;
+            border-radius: 12px;
+            font-size: 1.25rem;
+            background: hsl(345deg 100% 47%);
+            color: white;
+            transform: translateY(-6px);
+          }
+        
+          .pushable:active .front {
+            transform: translateY(-2px);
+          }
+      }
+      * {
+        background-color: lightblue;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      h2{
+         /* margin-top: 30px; */
+          color: darkgreen;
+      }
+      #msg{
+          /* text-align: center; */
+          margin-bottom: 1em;
+      }
+      #gameboard{
+          border:3px solid
+      }
+      #score{
+      margin-top: 1em;
+      margin-bottom: 1em;
+      }
+      .btns{
+          display: flex;
+          flex-direction: row-reverse;
+          flex-wrap: wrap;
+          justify-content:center;
+          
+      }
+      #start{
+          margin: auto;
+          padding-top: 10px;
+          margin-top: 20px;
+      }
+      canvas{
+          margin-top: 70px;
+         
+      }
+      
+      .pushable {
+          margin: 10px;
+         
+          background: hsl(340deg 100% 32%);
+          border-radius: 12px;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+          outline-offset: 4px;
+        }
+        .front {
+          display: block;
+          padding: 15px 42px;
+          border-radius: 12px;
+          font-size: 1.25rem;
+          background: hsl(345deg 100% 47%);
+          color: white;
+          transform: translateY(-6px);
+        }
+      
+        .pushable:active .front {
+          transform: translateY(-2px);
+        }
