@@ -227,7 +227,7 @@
         }
         .btns{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
             flex-wrap: wrap;
             justify-content:center;
             
