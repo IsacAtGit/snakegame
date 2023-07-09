@@ -31,40 +31,51 @@
     }
   </style>
 <body>
-    <h2>sanke game</h2>
-    <p id="msg">space to pause</p>
+    <h2>Sanke Game</h2>
+
     <div id="container">
-        <canvas id="gameboard" width="500" height="500">
+        <canvas id="gameboard" width="400" height="400">
         </canvas>
-        <div id="score">Score <span id="score">0</span></div>
+        <div id="score">Score <span id="scoreval">0</span></div>
+       <div class="btns">
+        <div>
         <button class="pushable" id="up" onclick="upbtn()">
-            <span class="front">
+            <span class="front"> &nbsp;
                up
-            </span>
-          </button>
-          <button class="pushable" id="bottom" onclick="downbtn()">
-            <span class="front">
-              down 
+               &nbsp;
             </span>
           </button>
           <button class="pushable" id="left" onclick="leftbtn()">
             <span class="front">
+
              left
+             &nbsp;
             </span>
           </button>
+        </div>
+        <div>
+            <button class="pushable" id="bottom" onclick="downbtn()">
+                <span class="front">
+                  down 
+                </span>
+              </button>
+          
           <button class="pushable" id="right" onclick="rightbtn()">
             <span class="front">
               right 
             </span>
           </button>
-          <br>
-          <br><br>
-          <button class="pushable" id="start" onclick="startbtn()">
+        </div>
+         
+         
+        </div>
+        <br>
+        <br><br>
+        <button class="pushable" id="start" onclick="startbtn()">
             <span class="front">
              Start
             </span>
           </button>
-          
     </div>
 </body>
 </html>

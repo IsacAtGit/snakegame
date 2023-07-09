@@ -1,9 +1,9 @@
 let gameboard=document.getElementById("gameboard")
 const context=gameboard.getContext('2d')
-const score=document.getElementById("score")
+const score=document.getElementById("scoreval")
 let width=gameboard.width
 let height=gameboard.height
-const unit=25;//width and height of food
+const unit=20;//width and height of food
 let foodx=0;
 let foody=0;
 let xvel=unit;
