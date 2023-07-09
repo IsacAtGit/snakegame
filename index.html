@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<style>
+    .pushable {
+      background: hsl(340deg 100% 32%);
+      border-radius: 12px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      outline-offset: 4px;
+    }
+    .front {
+      display: block;
+      padding: 12px 42px;
+      border-radius: 12px;
+      font-size: 1.25rem;
+      background: hsl(345deg 100% 47%);
+      color: white;
+      transform: translateY(-6px);
+    }
+  
+    .pushable:active .front {
+      transform: translateY(-2px);
+    }
+  </style>
+<body>
+    <h2>sanke game</h2>
+    <p id="msg">space to pause</p>
+    <div id="container">
+        <canvas id="gameboard" width="500" height="500">
+        </canvas>
+        <div id="score">Score <span id="score">0</span></div>
+        <button class="pushable" id="up" onclick="upbtn()">
+            <span class="front">
+               up
+            </span>
+          </button>
+          <button class="pushable" id="bottom" onclick="downbtn()">
+            <span class="front">
+              down 
+            </span>
+          </button>
+          <button class="pushable" id="left" onclick="leftbtn()">
+            <span class="front">
+             left
+            </span>
+          </button>
+          <button class="pushable" id="right" onclick="rightbtn()">
+            <span class="front">
+              right 
+            </span>
+          </button>
+          <br>
+          <br><br>
+          <button class="pushable" id="start" onclick="startbtn()">
+            <span class="front">
+             Start
+            </span>
+          </button>
+          
+    </div>
+</body>
+</html>
